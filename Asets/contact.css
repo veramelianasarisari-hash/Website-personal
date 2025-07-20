@@ -1,0 +1,385 @@
+/* CLOTHESIS Contact Page Stylesheet */
+
+/* Umum */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigasi utama */
+.top-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 3px solid pink;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #d40063;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 20px;
+    transition: 0.3s;
+}
+
+.top-nav a:hover {
+    background-color: pink;
+    color: white;
+    border-radius: 5px;
+}
+
+.top-nav a.active {
+    background-color: pink;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-bottom: 3px solid pink;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: nowrap; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 160px; 
+    object-fit: contain;
+}
+
+.brand-name {
+    display: block;
+    width: 100%;
+    font-size: 88px;
+    color: pink;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 80px;
+    margin-top: 20px;
+}
+
+/* Layout utama */
+.main-content {
+    display: flex;
+    min-height: 80vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #fff0f5;
+    padding: 20px;
+    border-right: 3px solid pink;
+}
+
+.sidebar h3 {
+    text-align: center;
+    color: #d40063;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: maroon;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.sidebar ul li a:hover {
+    background-color: pink;
+    color: white;
+}
+
+/* Konten utama */
+.content {
+    flex-grow: 1;
+    padding: 30px 60px;
+    background-color: #fff;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.content h2 {
+    font-size: 32px;
+    color: brown;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contact Page Specific Styles */
+.page-title {
+    font-size: 48px;
+    color: #d40063;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    background-color: #fff0f5;
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid pink;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+    color: #d40063;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.info-section {
+    margin-bottom: 30px;
+}
+
+.info-section h3 {
+    color: #d40063;
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-section p {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    background: linear-gradient(135deg, pink, #d40063);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, pink, #d40063);
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    font-size: 18px;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    background: #d40063;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid pink;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    color: #d40063;
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #d40063;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid pink;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: Arial, sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #d40063;
+    box-shadow: 0 0 0 3px rgba(212, 0, 99, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, pink, #d40063);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(212, 0, 99, 0.3);
+    background: #d40063;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 3px solid pink;
+    font-weight: bold;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .top-nav a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .brand-name {
+        font-size: 40px;
+        letter-spacing: 20px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px solid pink;
+    }
+
+    .sidebar ul li a {
+        padding: 15px;
+    }
+
+    .content {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .page-title {
+        font-size: 32px;
+        letter-spacing: 1px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 20px;
+    }
+}

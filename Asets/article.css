@@ -1,0 +1,48 @@
+/* Accordion Article Section */
+.accordion-section {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: #fff0f5;
+    border-radius: 15px;
+    border: 3px solid pink;
+}
+
+.accordion-title {
+    font-size: 28px;
+    color: #d40063;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.accordion-btn {
+    background-color: #d40063;
+    color: white;
+    padding: 15px 25px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-btn:hover {
+    background-color: #a3004a;
+}
+
+.accordion-content {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    border-left: 4px solid pink;
+    border-radius: 0 0 10px 10px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 15px;
+}
